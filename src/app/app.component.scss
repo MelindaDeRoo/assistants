@@ -1,13 +1,20 @@
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   bottom: 0;
-  height: 96px;
+  height: 64px;
   width: 100%;
   background-color: #F7931D;
 
   @media screen and (max-width: 375px){
     position: static;
   }
+}
+
+ul {
+  padding: 0;
 }
 
 .toolbar {
@@ -31,4 +38,34 @@ footer {
   @media screen and (max-width: 1023px){
     margin: 0 1.5rem;
   }
+}
+
+.planning-table {
+  margin: 0.25rem 0 1.5rem;
+  li {
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 3px;
+    padding: 1rem 2rem;
+    margin-bottom: 0.5rem;
+  }
+  div {
+    width: 256px;
+  }
+  .planning-header {
+    background-color: #3D183D;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .planning-row {
+    background-color: #fff;
+    font-size: 1rem;
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+  }
+}
+
+.footer-text {
+  color: #fff;
+  margin: auto;
 }
