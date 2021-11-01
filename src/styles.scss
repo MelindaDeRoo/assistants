@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@import './assets/fonts/caecilia/style';
+
+body {
+  margin:0;
+}
+
+h1, h2, h3 {
+  font-family: 'Caecilia LT Pro 55 Roman';
+  color: #3D183D;
+}
