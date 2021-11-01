@@ -1,6 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @import './assets/fonts/caecilia/style';
 
+@font-face {
+font-family: 'Bliss Pro';
+font-style: normal;
+font-weight: normal;
+src: local('BlissPro-Regular.otf') format('otf');
+}
+
 body {
   margin:0;
 }
@@ -8,4 +15,18 @@ body {
 h1, h2, h3 {
   font-family: 'Caecilia LT Pro 55 Roman';
   color: #3D183D;
+}
+
+table, p, span {
+  font-family: 'Bliss Pro';
+  font-size: 1rem;
+}
+
+thead {
+  text-align:left;
+  color: #3D183D;
+}
+
+th {
+  width: 128px;
 }

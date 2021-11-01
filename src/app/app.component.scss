@@ -1,9 +1,13 @@
 footer {
   position: fixed;
+  bottom: 0;
   height: 96px;
   width: 100%;
   background-color: #F7931D;
-  bottom: 0;
+
+  @media screen and (max-width: 375px){
+    position: static;
+  }
 }
 
 .toolbar {
@@ -21,6 +25,10 @@ footer {
   margin: auto;
 }
 
-.content {
-  margin: 0 256px;
+.container {
+  margin: 0 25%;
+
+  @media screen and (max-width: 1023px){
+    margin: 0 1.5rem;
+  }
 }
