@@ -1,0 +1,26 @@
+<h1>Apeldoorn Assistants</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate non mi at accumsan. Phasellus est lorem, hendrerit sit amet scelerisque nec, ullamcorper quis lorem. In porttitor bibendum leo non aliquam. Pellentesque pellentesque interdum aliquam. Nunc convallis nibh neque, nec commodo leo tempor nec.</p>
+<h3>Planning</h3>
+<ul class="planning-table">
+  <li class="planning-header">
+    <div>Tijd</div>
+    <div>Activiteit</div>
+  </li>
+  <li class="planning-row">
+    <div>9:30 - 10:30</div>
+    <div>Introductie</div>
+  </li>
+  <li class="planning-row">
+    <div>10:00 - 10:15</div>
+    <div>Meer activiteiten toevoegen (?)</div>
+  </li>
+</ul>
+<h3>Contact formulier</h3>
+<p>Vul hier uw gegevens in, blah, blah, blah.</p>
+<div class="register-form" [formGroup]="registerForm">
+  <label for="name">Naam</label>
+  <input id="name" type="text" formControlName="name"/>
+  <label for="phone">Telefoonnummer</label>
+  <input id="phone" type="number" formControlName="phone"/>
+  <button type="submit" (click)="sendForm()">Versturen</button>
+</div>
