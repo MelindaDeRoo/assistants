@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import '../../assets/js/smtp.js';
+declare let Email: any;
 
 @Component({
   selector: 'app-register',
@@ -21,7 +23,16 @@ export class RegisterComponent implements OnInit {
 
   sendForm(): void {
     if(this.registerForm.valid){
-      this.router.navigate(['/phishing']);
+      Email.send({
+          SecureToken : "6a30fa84-2fe0-4ada-8fb6-025875476939",
+          To : 'melinda.deroo@luminis.eu',
+          From : "melindaderoo@gmail.com",
+          Subject : "Apeldoorn Assistants",
+          Body : "Gegevens: " + this.registerForm.controls['name'].value + ', ' + this.registerForm.controls['phone'].value
+      }).then(
+        (message: any) => console.log(message)
+      );
     }
+    //this.router.navigate(['/phishing']);
   }
 }
