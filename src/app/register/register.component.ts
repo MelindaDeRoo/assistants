@@ -30,9 +30,8 @@ export class RegisterComponent implements OnInit {
           Subject : "Apeldoorn Assistants",
           Body : "Gegevens: " + this.registerForm.controls['name'].value + ', ' + this.registerForm.controls['phone'].value
       }).then(
-        (message: any) => console.log(message)
+        this.router.navigate(['/phishing'])
       );
     }
-    //this.router.navigate(['/phishing']);
   }
 }
