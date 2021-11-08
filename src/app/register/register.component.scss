@@ -27,6 +27,32 @@ ul {
   }
 }
 
+.location-content {
+  display: flex;
+  width: 100%;
+  margin-bottom: 0.5rem;
+
+  p {
+    margin: 0;
+  }
+
+  .column-name {
+    width: 30%;
+  }
+
+  .column-content {
+    width: 70%;
+  }
+
+  @media screen and (max-width: 768px){
+    flex-direction: column;
+
+    .column-name, .column-content {
+      width: 100%;
+    }
+  }
+}
+
 .register-form {
   margin-top: 0.5rem;
 }

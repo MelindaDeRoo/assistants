@@ -2,15 +2,11 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: fixed;
+  position: static;
   bottom: 0;
   height: 64px;
   width: 100%;
   background-color: #F7931D;
-
-  @media screen and (max-width: 678px){
-    position: static;
-  }
 }
 
 .toolbar {
