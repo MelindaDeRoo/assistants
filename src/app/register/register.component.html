@@ -1,4 +1,4 @@
-<h1>Apeldoorn Assistants</h1>
+<h1>BKA Assistants</h1>
 <p>Na een introductie van Luminis, geeft Gerard Verbeek een introductie over 'wat' wij nu eigenlijk doen bij Luminis en een korte presentatie met als thema 'Phishing'.</p>
 <h3>Planning</h3>
 <ul class="planning-table">
@@ -33,12 +33,14 @@
     <p class="column-content">QR-code of negatieve test, bij klachten thuisblijven. We gaan het niet controleren, het is je eigen verantwoordelijkheid.</p>
   </div>
 </div>
+<p class="signature">Leuk om je te ontmoeten op 23 november!<br/><br/>
+  Hartelijke groet, Wendy, Maureen en Ine.</p>
 <h3>Contact formulier</h3>
 <p>Vul hier uw gegevens in</p>
 <div class="register-form" [formGroup]="registerForm">
   <label for="name">Naam</label>
   <input id="name" type="text" formControlName="name"/>
   <label for="phone">Telefoonnummer</label>
-  <input id="phone" type="number" formControlName="phone"/>
+  <input id="phone" type="text" formControlName="phone"/>
   <button type="submit" (click)="sendForm()">Versturen</button>
 </div>
