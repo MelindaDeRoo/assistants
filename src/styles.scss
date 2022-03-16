@@ -1,31 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
-@import './assets/fonts/caecilia/style';
+@import "./assets/fonts/caecilia/style";
 
-@mixin blissProTextSettings {
-  font-family: 'Bliss Pro';
-  font-size: 1rem;
+@font-face {
+  font-family: "Bliss Pro";
+  src: url("./assets/fonts/BlissPro-Regular.otf");
 }
 
 @font-face {
-font-family: 'Bliss Pro';
-font-style: normal;
-font-weight: normal;
-src: local('BlissPro-Regular.otf') format('otf');
+  font-family: 'Caecilia';
+  src: url("./assets/fonts/caecilia/CaeciliaLTPro45Light.woff");
+}
+
+@mixin blissProTextSettings {
+  font-family: "Bliss Pro";
+  font-size: 1rem;
 }
 
 body {
-  margin:0;
+  margin: 0;
 }
 
-h1, h2, h3 {
-  font-family: 'Caecilia LT Pro 55 Roman';
-  color: #3D183D;
+h1,
+h2,
+h3 {
+  font-family: "Caecilia";
+  color: #3d183d;
   margin-bottom: 0;
 }
 
 label {
-  @include blissProTextSettings;
-  color: #3D183D;
+  color: #3d183d;
   font-weight: bold;
 }
 
@@ -34,20 +38,24 @@ p {
   margin-top: 0.25rem;
 }
 
-ul, li, span, label {
+ul,
+li,
+span,
+label {
   @include blissProTextSettings;
 }
 
 thead {
-  text-align:left;
-  color: #3D183D;
+  text-align: left;
+  color: #3d183d;
 }
 
 th {
   width: 128px;
 }
 
-input[type=text], input[type=number] {
+input[type="text"],
+input[type="number"] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -57,14 +65,14 @@ input[type=text], input[type=number] {
   box-sizing: border-box;
 }
 
-button[type=submit] {
+button[type="submit"] {
   height: 36px;
   width: 96px;
-  background-color: #3D183D;
+  background-color: #3d183d;
   border: 0;
   border-radius: 3px;
   color: #fff;
-  font-family: 'Bliss Pro';
+  font-family: "Bliss Pro";
   font-size: 1rem;
   margin: 0.5rem 0 1rem;
 }
